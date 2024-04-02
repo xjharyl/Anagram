@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Anagram Validator </title>
+        <script>
+            function anagram(){
+                var input1 = prompt("Kindly enter the first word/phrase: ").toLowerCase().split('').sort().join('').trim();
+                var input2 = prompt("Kindly enter the second word/phrase: ").toLowerCase().split('').sort().join('').trim();
+
+                if(input1===input2){
+                    alert("Bingo! The words/phrases that you have entered are anagrams!");
+                }
+                else{
+                    alert("Sorry. The words/phrases that you have entered are not anagrams.");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1> Anagram Validator </h1>
+        <button onclick ="anagram()"> Validate anagram </button>
+    </body>
+</html>
